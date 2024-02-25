@@ -59,7 +59,7 @@ public class LC_219_Contains_Duplicate_II {
             }  
 
             // Step 2
-            if (set.contains(nums[i])) {
+            if (set.contains(nums[j])) {
                     return true;
             }
 
