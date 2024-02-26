@@ -2,8 +2,9 @@ package ARRAYS;
 
 public class EuclidGCD {
     
-
+   
     // Using Recursion 
+     // Time Complexity -->  O(logmin(m,n))
     public static int gcd_V1(int a , int b) {
           if (b == 0) {
              return a ;
@@ -13,7 +14,7 @@ public class EuclidGCD {
     }
 
     // Using Iteration
-
+     // Time Complexity -->  O(logmin(m,n))
     public static int gcd_V2(int a , int b){
         if (a == 0) {
             return b ;
@@ -34,9 +35,10 @@ public class EuclidGCD {
     }
 
     public static void main(String[] args) {
-        
-        System.out.println(gcd_V1(24, 60));
 
+        // Solution 1
+        System.out.println(gcd_V1(24, 60));
+        // Solution 2
         System.out.println(gcd_V2(24, 60));
     }
 }
